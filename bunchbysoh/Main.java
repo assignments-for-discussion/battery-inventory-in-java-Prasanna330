@@ -9,7 +9,7 @@ public class Main {
 
   static CountsBySoH countBatteriesByHealth(int[] presentCapacities) {  // return type of class CountBySoH
     CountsBySoH counts = new CountsBySoH();
-    int sohper=0;                       //temporary variable to store SoH% value of each present capacities during the loop
+    int sohper=0;                      
     for(int i=0;i<presentCapacities.length;i++)
       {
         sohper= 100*(presentCapacities[i]/120);      
@@ -20,7 +20,7 @@ public class Main {
         else
           counts.failed++;                // If the soh% value is lesser than 65
       }
-    return counts;                // return object of class CountBySort with implemented variables
+    return counts;               
   }
 
   static void testBucketingByHealth() {
