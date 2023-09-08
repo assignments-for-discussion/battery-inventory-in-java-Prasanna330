@@ -12,7 +12,7 @@ public class Main {
     int sohper=0;                      
     for(int i=0;i<presentCapacities.length;i++)
       {
-        sohper= 100*(presentCapacities[i]/120);      
+        sohper= 100*presentCapacities[i]/120;      
         if(sohper>80 && sohper<=100)      // If the soh% value is greater than 80 upto 100         
           counts.healthy++;
         else if(sohper>=65 && sohper<=80)
