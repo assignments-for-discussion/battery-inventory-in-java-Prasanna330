@@ -27,9 +27,9 @@ public class Main {
     System.out.println("Counting batteries by SoH...\n");
     int[] presentCapacities = {115, 118, 80, 95, 91, 77};                 //Present capacity array
     CountsBySoH counts = countBatteriesByHealth(presentCapacities);
-    assert(counts.healthy == 2);
-    assert(counts.exchange == 3);
-    assert(counts.failed == 1);
+    assert counts.healthy == 2;
+    assert counts.exchange == 3;
+    assert counts.failed == 1;
     System.out.println("Done counting :)\n");
   }
 
